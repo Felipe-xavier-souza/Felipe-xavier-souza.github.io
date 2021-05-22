@@ -1,0 +1,289 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("images/tecnologia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(154, 209, 228);
+  color: rgb(7, 173, 206);
+  font-family: Cambria;
+  margin: 0;
+  padding: 10px 50px 50px 50px;
+}
+
+h1,h2{
+  margin: 0;
+}
+
+header h1{
+  font-size: 90px;
+  user-select: none;
+}
+
+#logo {
+  font-family:Origin Tech Demo;
+  display: flex;
+  justify-content: center;
+}
+#logoImg {
+  pointer-events: none;
+  height: 100px;
+   padding-right: 10px;
+}
+
+.menu {
+  background-color: rgb(9, 93, 166);
+  justify-content: center;
+  display: flex;
+  box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.12);
+}
+
+.menu a {
+  padding: 14px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+
+.menu a:hover{
+  background-color: white;
+  color: rgb(9, 93, 166);
+}
+
+.coluna-direita{
+  color: rgb(9, 93, 166);
+float: left;
+padding-left: 20px;
+width: 25%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;    
+  box-shadow: 10px 10px 20px  rgba(0, 0, 0, 0.12);
+}
+
+#promocaoBanner{
+  user-select: none;
+  pointer-events: none;
+  height: 250px;
+  background-image: url('images/brigadeiros.jpg');
+  color: rgb(9, 93, 166);
+  font-size: 1vw;
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 2px white;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#promocaoBanner:hover{
+ box-shadow: 10px 9px 9px gray;
+}
+#promoçãoValor{
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+}
+
+
+.sobreImg{
+  height: 75px;
+  border-radius: 50%;
+  margin: 10px;
+  box-shadow: 0px 0px 5px gray;
+  cursor: pointer;
+  transition: box-shadow 0.3s
+}
+
+.sobreImg:hover{
+  box-shadow: 5px 10px 10px gray;
+}
+
+.sobreItens{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sobreTexto a {
+  color: rgb(9, 93, 166);
+}
+
+.promo{
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.9rem;
+  padding: 10px;
+  transition: box-shadow 0.5s;
+}
+
+#promoBanner img{
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+ }
+
+ #dinheiro{
+   text-align: center;
+ }
+
+.promo:hover{
+  box-shadow: 0px 0px 20px gray;
+}
+
+.promo img{
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+ #celular{
+   height: 150px;
+  margin-right: 10px;
+ }
+
+.social{
+  user-select: none;
+  pointer-events: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social img{
+  cursor: pointer; 
+  height: 50px;
+  margin: 5px;  
+  transition: opacity 0.3s!important;
+}
+
+.social img:hover{
+  opacity: 0.75 !important;
+}
+
+.coluna-esquerda{
+  color: rgb(9, 93, 166);
+float: left;
+width: 75%;
+background-color: rgb(52, 216, 222);
+}
+
+.produto{
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;    
+  border-radius: 5px;
+  transition:box-shadow 0.5s;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.produto img{
+  height: 150px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+.produto p{
+  margin: 0px;
+}
+
+.tituloProduto{
+  font-weight: bold;
+}
+
+.produto:hover{
+  box-shadow: 5px 10px 15px gray;
+  -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+
+.miniGrid{
+  height: 270px;
+  overflow: auto;
+}
+
+.grandeGrid{
+  height: 260px;
+  overflow: auto;
+}
+
+#entrega{
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+  height: 100px;
+  width: 300px;
+}
+
+#entrega img{
+  height: 75px;
+  width: 107px;
+  position: absolute;
+  right: 10px;  
+  border-radius: 50%;
+}
+
+#tel{
+  position: absolute;
+  height: 60px;
+  background-color: rgb(9, 93, 166);
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  left: 16px;
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  user-select: none;
+  pointer-events: none;
+}
+
+#entrega img:hover + #tel{
+  opacity: 1;
+}
+
+#tel p{
+  margin: 0px;
+}
+
+@media screen and (max-width: 800px){
+  .coluna-esquerda{
+    width: 100%;
+  }
+  .coluna-direita{
+    width: 100%;
+  }
+
+  header h1{
+    font-size: 3rem;
+  }
+
+  logoImg{
+    width: 75px;
+  }
+
+  #promocaoBanner{
+    font-size: 4vw;
+  }
+
+  .promo{
+    font-size: 3vw;
+  }
+  
+
+}
